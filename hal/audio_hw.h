@@ -768,4 +768,6 @@ static inline bool is_loopback_input_device(audio_devices_t device) {
  * stream_in or stream_out mutex first, followed by the audio_device mutex.
  */
 
+int tfa98xx_start_feedback(struct audio_device *adev, snd_device_t snd_device);
+
 #endif // QCOM_AUDIO_HW_H
